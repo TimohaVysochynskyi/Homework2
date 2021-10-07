@@ -1,0 +1,204 @@
+body {
+  background-color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(/images/Main-background.jpg);
+}
+
+.container {
+  padding: 20px;
+}
+
+header {
+  background-color: #181818;
+  border-radius: 8px;
+}
+
+.rust-image {
+  margin-left: 5%;
+  width: 30%;
+  float: left;
+  border-bottom-left-radius: 30px;
+}
+
+.csgo-image {
+  width: 30.1%;
+  border-top-right-radius: 30px;
+}
+
+.container_header {
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 70px;
+  float: left;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 100px;
+}
+
+.header-center {
+  align-items: center;
+}
+
+.container_header nav {
+  float: right;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block; /*один из способов разместить элементы в строку*/
+}
+
+.container_header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lan1,
+.lan2 {
+  float: left;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  margin-top: 17%;
+  opacity: 0.8;
+  line-height: 0px;
+  margin-top: 23%;
+}
+
+.slesh {
+  float: left;
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+  font-size: 18px;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  margin-top: 13.5%;
+  opacity: 0.8;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.lan1:hover,
+.lan2:hover {
+  color: white;
+  opacity: 1;
+}
+
+.header_link1,
+.header_link2 {
+  float: left;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  opacity: 0.8;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 18px;
+}
+
+.header_phone {
+  float: left;
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+  font-size: 21px;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  margin-top: 10%;
+  opacity: 0.9;
+  margin-left: 35px;
+  margin-right: 30px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-tap-highlight-color: black;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.header_link1:hover,
+.header_link2:hover {
+  color: white;
+  opacity: 1;
+}
+
+.header_phone:hover {
+  color: white;
+  opacity: 1;
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.15);
+}
+
+.list-menu {
+  display: inline-block;
+  list-style: none;
+}
+
+#btn-menu {
+  display: none;
+}
+#btn-menu + label {
+  display: none;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+#btn-menu + label:before {
+  position: absolute;
+  content: url("/images/Аккордеон.jpg");
+  display: inline-block;
+  bottom: 40px;
+  left: 110px;
+  font-size: 22px;
+}
+#btn-menu:checked + label:before {
+  content: "✖";
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 767px) {
+  #btn-menu + label {
+    display: inline-block;
+    margin-left: 50%;
+  }
+  #btn-menu + label + .list-menu {
+    margin-left: 50%;
+    display: none;
+  }
+  #btn-menu:checked + label + .list-menu {
+    margin-left: 50%;
+    display: block;
+  }
+}
+
+.icon {
+  width: 40px;
+}
+
+.navichka {
+  list-style: none;
+  line-height: 30px;
+}
+
+.spisoc1 {
+  margin-top: 2px;
+  float: left;
+  width: 25px;
+}
